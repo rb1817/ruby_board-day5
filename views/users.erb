@@ -1,0 +1,13 @@
+<table class = 'table table-hover'>
+    <thead>
+        <th>회원목록</th>
+    </thead>
+    <tbody>
+        <% @users.each do |user|%>
+        <tr>
+            <td><a href = "/user/<%=user[0]%>"><%=user[0]%></a></td>
+        </tr>
+        <%end%>
+    </tbody>
+</table>
+
